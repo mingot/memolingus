@@ -7,7 +7,7 @@ from django.forms.models import inlineformset_factory
 from django.contrib.auth.models import User
 from parsapp.models import Word, WordContext
 from parsapp.forms import ParseForm, WordContextForm
-
+from parsapp.dictionary import lookup
 
 import re
 import dump # load english_dict with top 1000 UK words
@@ -30,7 +30,7 @@ def parse_input(request):
 					w = Word.objects.get(name=word)
 				except Word.DoesNotExist:
 					# TODO: What if word does not exists in dictionary?
-					w = Word.objects.create(name=word, description="TODO")
+					w = Word.objects.create(name=word, description=lookup(word))
 				request.user.wordcontext_set.create( word=w, status=0) #status temp
 			return	HttpResponseRedirect(reverse('words', kwargs={'status':0}))
 	else:
