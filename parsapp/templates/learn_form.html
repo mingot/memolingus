@@ -3,9 +3,7 @@
 {% block head_title %}Title: text parsejat{% endblock %}
 
 {% block body %}
-<p> The text introduced is this one:</p>
-
-    {% if form.errors %}
+    {%  form.errors %}
         <p style="color: red;">
              Please correct the error {{ form.errors|pluralize }} below.
         </p>

@@ -18,6 +18,3 @@ class WordContext(models.Model):
 
 	def __unicode__(self):
 		return u'word:%s, user:%s' % (self.word.name, self.user.username)
-
-	# def get_absolute_url(self):
-	# 	return reverse('word-cotext', kwargs={'pk':self.pk})

@@ -18,7 +18,7 @@ def select_words(msg, request):
 	
 	msg = msg.lower() # convert to lower case
 	# msg = strip_non_ascii(msg) #remove not ascii characters
-	msg = re.sub('[.,?!%\n()]','',msg)  # remove punctuation signs
+	msg = re.sub('[.,?!%\n()]','',msg)  # remove punctuation signs and numbers
 	msg = msg.rsplit(' ') # split words
 	
 	# Obtain all the words the user already know

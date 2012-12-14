@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 from django.forms.models import inlineformset_factory
 from django.contrib.auth.models import User
 from parsapp.models import Word, WordContext
-from parsapp.forms import ParseForm, WordContextForm#, WordFormSetFiltered
+from parsapp.forms import ParseForm, WordContextForm
 
 
 import re
@@ -34,7 +34,7 @@ def parse_input(request):
 				request.user.wordcontext_set.create( word=w, status=0) #status temp
 			return	HttpResponseRedirect(reverse('words', kwargs={'status':0}))
 	else:
-		form = ParseForm(initial={'parse_text':'What text do you want to fucking parse?'})
+		form = ParseForm(initial={'parse_text':'The hacker made the startup! Parse it!'})
 	return render_to_response('parse_form.html', 
 		{'form':form},
 		context_instance = RequestContext(request),
@@ -48,7 +48,7 @@ def word_view(request, status):
 		formset = WordFormSet(request.POST, instance=request.user)
 		if formset.is_valid():
 			formset.save()
-			return render_to_response('congrats.html')
+			return render_to_response('congrats.html', context_instance = RequestContext(request))
 	else:
 		formset = WordFormSet(instance=request.user, queryset=WordContext.objects.filter(status=status))
 	return render_to_response('words_form.html',
