@@ -15,9 +15,14 @@
         <table>
             {% for form in formset %}
         		{{ form.as_p }}
-        		<p>{{ form.instance.word.description }}</p>
+        		<button type="button" class="btn btn-inverse" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
+        		<div id="{{ form.instance.word.name }}" class="collapse">
+        			<p>{{ form.instance.word.description }}</p>
+        		</div>
         	{% endfor %}
         </table>
-        <input type="submit" value="Submit">
+
+        <p><input type="submit" value="Submit"></p>
     </form>
 {% endblock %}
+
