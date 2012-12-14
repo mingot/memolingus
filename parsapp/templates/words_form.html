@@ -1,0 +1,22 @@
+{% extends "site_base.html" %}
+
+{% block head_title %}Title: text parsejat{% endblock %}
+
+{% block body %}
+<p> The text introduced is this one:</p>
+
+    {% if formset.errors %}
+        <p style="color: red;">
+             Please correct the error {{ formset.errors|pluralize }} below.
+        </p>
+    {% endif %}
+    <form action="" method="post"> {% csrf_token %}
+    	{{ formset.management_form }}
+        <table>
+            {% for form in formset %}
+        		{{ form }}
+        	{% endfor %}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

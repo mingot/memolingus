@@ -1,0 +1,393 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "memolingus/urls.py",
+			"settings":
+			{
+				"buffer_size": 929,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "parsapp/views.py",
+			"settings":
+			{
+				"buffer_size": 3683,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "parsapp/dump.py",
+			"settings":
+			{
+				"buffer_size": 916,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "parsapp/models.py",
+			"settings":
+			{
+				"buffer_size": 955,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 222.0,
+		"selected_items":
+		[
+			[
+				"stak",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"paca",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"palc",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"stac",
+				"Stackoverflow: Search Selection"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"git:",
+				"Git: Commit history"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/mingot/Projectes/django/memolingus/parsapp/views.py",
+		"/home/mingot/Projectes/django/memolingus/memolingus/templates/_account_bar.html",
+		"/home/mingot/Projectes/django/memolingus/memolingus/settings.py",
+		"/home/mingot/Projectes/django/memolingus/memolingus/templates/homepage.html",
+		"/home/mingot/Projectes/django/memolingus/parsapp/models.py",
+		"/home/mingot/Projectes/django/memolingus/parsapp/templates/show_words.html",
+		"/home/mingot/Projectes/django/memolingus/memolingus/templates/_footer.html",
+		"/home/mingot/Envs/memolingus/lib/python2.6/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/base.html",
+		"/home/mingot/Envs/memolingus/lib/python2.6/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/subnav_base.html",
+		"/home/mingot/Envs/memolingus/lib/python2.6/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/less_base.html",
+		"/home/mingot/Envs/memolingus/lib/python2.6/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/banner_base.html",
+		"/home/mingot/Projectes/django/memolingus/memolingus/urls.py",
+		"/home/mingot/Projectes/django/prova_pinax/prova_pinax/settings.py",
+		"/home/mingot/Projectes/django/prova_pinax/parsapp/templates/parse_form.html",
+		"/home/mingot/Projectes/django/prova_pinax/parsapp/templates/learn_form.html",
+		"/home/mingot/Projectes/django/prova_pinax/parsapp/templates/congrats.html",
+		"/home/mingot/Projectes/django/mysite/proves.html",
+		"/home/mingot/Projectes/django/mysite/jquery.html",
+		"/home/mingot/Projectes/django/mysite/jquery.js",
+		"/home/mingot/Projectes/django/mysite/chuleta",
+		"/home/mingot/Projectes/django/mysite/mysite/views.py",
+		"/home/mingot/Projectes/django/mysite/books/admin.py",
+		"/home/mingot/Projectes/django/mysite/mysite/templates/current_datetime.html",
+		"/home/mingot/Projectes/django/mysite/books/views.py",
+		"/home/mingot/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings",
+		"/home/mingot/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/mingot/Projectes/django/mysite/mysite/templates/meta.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"site",
+			"package control"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "memolingus/urls.py",
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								649,
+								649
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "parsapp/views.py",
+					"settings":
+					{
+						"buffer_size": 3683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1258,
+								1258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 340.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "parsapp/dump.py",
+					"settings":
+					{
+						"buffer_size": 916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "parsapp/models.py",
+					"settings":
+					{
+						"buffer_size": 955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"vie",
+				"books/views.py"
+			],
+			[
+				"v",
+				"mysite/views.py"
+			],
+			[
+				"hu",
+				"chuleta"
+			],
+			[
+				"myste/tem",
+				"mysite/templates/current_datetime.html"
+			],
+			[
+				"",
+				"chuleta"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/mingot/Projectes/django/llengua/llegnua.sublime-project"
+			],
+			[
+				"llengua",
+				"/home/mingot/Projectes/django/llengua/llegnua.sublime-project"
+			],
+			[
+				"llen",
+				"/home/mingot/Projectes/django/llengua/llegnua.sublime-project"
+			],
+			[
+				"lle",
+				"/home/mingot/Projectes/django/llengua/llegnua.sublime-project"
+			],
+			[
+				"my",
+				"/home/mingot/Projectes/django/mysite/mysite.sublime-project"
+			],
+			[
+				"ll",
+				"/home/mingot/Projectes/django/llengua/llegnua.sublime-project"
+			],
+			[
+				"lleng",
+				"/home/mingot/Projectes/django/llengua/llegnua.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true
+}

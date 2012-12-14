@@ -1,0 +1,45 @@
+{% extends "banner_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block banner %}
+    <h1>{% trans "Welcome to MemoLingus" %}</h1>
+    <p>
+        {% blocktrans %}
+        <b>MemoLingus</b> is a <a href="http://djangoproject.com/">Django</a>
+        project intended to provide a framework to learn english words really fast.
+        {% endblocktrans %}
+    </p>
+    
+    {% if user.is_authenticated %}
+        {% url parse as what_next_url %}
+        <p class="what_next">{% blocktrans %}Want to <a href="{{ what_next_url }}" class="btn primary large">Parse Text</a>?{% endblocktrans %}</p>
+    {% else %}
+        {% url account_login as login_url %}
+        {% url account_signup as signup_url %}
+        <p>{% blocktrans %}You can <a href="{{ login_url }}" class="btn">Log In</a> or <a href="{{ signup_url }}" class="btn primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
+    {% endif %}
+{% endblock %}
+
+{% block column-1 %}
+    <h2>Learn</h2>
+    <p>Introduce a text and extract those words potentially unknown from you. Learn their definition before reading the text.</p>
+    <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+{% endblock %}
+
+{% block column-2 %}
+    <h2>Read</h2>
+    <p>Read the text with all the possible unknown words in your head and put them in context.</p>
+    <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+{% endblock %}
+
+{% block column-3 %}
+    <h2>Memorize</h2>
+    <p>Store those words in your account to review later.</p>
+    <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+{% endblock %}
+

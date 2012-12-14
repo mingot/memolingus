@@ -1,0 +1,18 @@
+{% extends "site_base.html" %}
+
+{% block head_title %}Title: text parsejat{% endblock %}
+
+{% block body %}
+
+	{% if not tolearn %}
+	<p>Congrats! You know every word!</p>
+	{% else %}
+		<p>This are the words learned</p>
+		<ul>
+		{% for word in tolearn %}
+			<li>{{ word }}</li>
+		{% endfor %}
+		</ul>
+	{% endif %}
+
+{% endblock %}

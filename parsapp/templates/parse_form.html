@@ -1,0 +1,24 @@
+
+{% extends "site_base.html" %}
+
+{% load bootstrap_tags %}
+{% block head_title %}Title: text parsejat{% endblock %}
+
+{% block body %}
+    {% if form.errors %}
+        <p style="color: red;">
+             Please correct the error {{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+    <form action="" method="post" class="form-horizontal"> {% csrf_token %}
+         <fieldset>
+             <legend>Parse Form</legend>
+             {% csrf_token %}
+             {{ form|as_bootstrap }}
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
+
