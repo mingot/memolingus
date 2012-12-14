@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 from django.forms.models import inlineformset_factory
 from django.contrib.auth.models import User
 from parsapp.models import Word, WordContext
-from parsapp.forms import ParseForm, WordContextForm
+from parsapp.forms import ParseForm, WordContextForm#, WordFormSetFiltered
 
 
 import re
@@ -44,26 +44,13 @@ def parse_input(request):
 def word_view(request, status):
 	WordFormSet = inlineformset_factory(User, WordContext, 
 		fk_name="user", can_delete=False, extra=0, form=WordContextForm)
-	
-	class WordFormSetFiltered(WordFormSet):
-		def get_queryset(self):
-			## See get_queryset method of django.forms.models.BaseModelFormSet
-			if not hasattr(self, '_queryset'):
-				self._queryset = self.queryset.filter(status=status)
-				if not self._queryset.ordered:
-					self._queryset = self._queryset.order_by(self.model._meta.pk.name) 
-				# assert False               
-			return self._queryset
-
-
-
 	if request.method=='POST':
-		formset = WordFormSetFiltered(request.POST, instance=request.user)
+		formset = WordFormSet(request.POST, instance=request.user)
 		if formset.is_valid():
 			formset.save()
 			return render_to_response('congrats.html')
 	else:
-		formset = WordFormSetFiltered(instance=request.user)
+		formset = WordFormSet(instance=request.user, queryset=WordContext.objects.filter(status=status))
 	return render_to_response('words_form.html',
 		{'formset':formset},
 		context_instance = RequestContext(request),

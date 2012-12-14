@@ -1,6 +1,7 @@
 from django import forms
 from parsapp.models import WordContext
 
+
 class ParseForm(forms.Form):
 	parse_text = forms.CharField(widget=forms.Textarea, label="Introduce the text to learn from")
 
@@ -9,6 +10,4 @@ class WordContextForm(forms.ModelForm):
 	class Meta:
 		model = WordContext
 		fields = ('word', 'status')
-
-
-
+	
