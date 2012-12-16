@@ -5,21 +5,17 @@
 {% block body %}
 <p> The text introduced is this one:</p>
 
-    {% if formset.errors %}
-        <p style="color: red;">
-             Please correct the error {{ formset.errors|pluralize }} below.
-        </p>
-    {% endif %}
     <form action="" method="post"> {% csrf_token %}
     	{{ formset.management_form }}
         <table>
         	<!-- TODO: Words listing styling -->
             {% for form in formset %}
         		{{ form.as_p }}
-        		<button type="button" class="btn btn-inverse" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
+        		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
         		<div id="{{ form.instance.word.name }}" class="collapse">
         			<!-- TODO: Improve apparance of word definitions -->
-        			<p>{{ form.instance.word.description }}</p>
+        			{{ form.instance.word.description|linebreaks }}
+                    <p></p>
         		</div>
         	{% endfor %}
         </table>

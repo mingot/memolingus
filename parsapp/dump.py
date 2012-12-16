@@ -36,7 +36,8 @@ def select_words(msg, request):
 		if re.search('[0-9]', word): msg.remove(word) # Remove words containing numbers
 		elif re.search('[A-Z]', word): msg.remove(word) # Remove words containing capital letters
 		elif re.search('\'', word): word = re.sub('\'.+','',word) # Remove the contractions from apostrophes: you're -> you
-	
+		elif len(word)<3: msg.remove(word)
+
 	# Obtain all the words the user already know
 	wordcontext = request.user.wordcontext_set.all()
 	word_list=[]
