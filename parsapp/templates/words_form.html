@@ -13,10 +13,12 @@
     <form action="" method="post"> {% csrf_token %}
     	{{ formset.management_form }}
         <table>
+        	<!-- TODO: Words listing styling -->
             {% for form in formset %}
         		{{ form.as_p }}
         		<button type="button" class="btn btn-inverse" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
         		<div id="{{ form.instance.word.name }}" class="collapse">
+        			<!-- TODO: Improve apparance of word definitions -->
         			<p>{{ form.instance.word.description }}</p>
         		</div>
         	{% endfor %}

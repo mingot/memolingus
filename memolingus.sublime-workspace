@@ -3,6 +3,10 @@
 	{
 		"selected_items":
 		[
+			[
+				"get",
+				"get_queryset"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +15,7 @@
 			"file": "memolingus/urls.py",
 			"settings":
 			{
-				"buffer_size": 929,
+				"buffer_size": 685,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,7 +23,33 @@
 			"file": "parsapp/views.py",
 			"settings":
 			{
-				"buffer_size": 3683,
+				"buffer_size": 2098,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "+ ---------------------------------------------------------------------------- +\n| TODOS @ viernes 14 diciembre 2012 19:29                                      |\n| 6 files scanned                                                              |\n+ ---------------------------------------------------------------------------- +\n\n## TODO (3)\n1. words_form.html:16  Words listing styling -->\n2. words_form.html:21  Improve apparance of word definitions -->\n3. dump.py:13  Improve the initial words to ignore by better word list frequencies\n",
+			"settings":
+			{
+				"buffer_size": 534,
+				"line_ending": "Unix",
+				"name": "TODO Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "parsapp/forms.py",
+			"settings":
+			{
+				"buffer_size": 667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "parsapp/templates/words_form.html",
+			"settings":
+			{
+				"buffer_size": 995,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,15 +57,15 @@
 			"file": "parsapp/dump.py",
 			"settings":
 			{
-				"buffer_size": 916,
+				"buffer_size": 1366,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "parsapp/models.py",
+			"file": "parsapp/dictionary.py",
 			"settings":
 			{
-				"buffer_size": 955,
+				"buffer_size": 490,
 				"line_ending": "Unix"
 			}
 		}
@@ -43,9 +73,49 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 222.0,
+		"height": 159.0,
 		"selected_items":
 		[
+			[
+				"todo",
+				"Show TODOs: Open files only"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"git commit",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"show",
+				"Show TODOs: Open files only"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
 			[
 				"stak",
 				"Stackoverflow: Search from Input"
@@ -55,20 +125,8 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"packa",
-				"Package Control: Remove Package"
-			],
-			[
 				"palc",
 				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: Install Package"
-			],
-			[
-				"stack",
-				"Stackoverflow: Search from Input"
 			],
 			[
 				"stac",
@@ -91,7 +149,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -108,11 +166,17 @@
 	},
 	"file_history":
 	[
-		"/home/mingot/Projectes/django/memolingus/parsapp/views.py",
+		"/home/mingot/.config/sublime-text-2/Packages/GoToDoc/Default (Linux).sublime-keymap",
+		"/home/mingot/Projectes/django/memolingus/parsapp/templates/learn_form.html",
+		"/home/mingot/Projectes/django/memolingus/parsapp/populate.py",
 		"/home/mingot/Projectes/django/memolingus/memolingus/templates/_account_bar.html",
-		"/home/mingot/Projectes/django/memolingus/memolingus/settings.py",
-		"/home/mingot/Projectes/django/memolingus/memolingus/templates/homepage.html",
 		"/home/mingot/Projectes/django/memolingus/parsapp/models.py",
+		"/home/mingot/Projectes/django/memolingus/memolingus/settings.py",
+		"/home/mingot/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/mingot/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/mingot/Projectes/django/memolingus/parsapp/dump.py",
+		"/home/mingot/Projectes/django/memolingus/parsapp/views.py",
+		"/home/mingot/Projectes/django/memolingus/memolingus/templates/homepage.html",
 		"/home/mingot/Projectes/django/memolingus/parsapp/templates/show_words.html",
 		"/home/mingot/Projectes/django/memolingus/memolingus/templates/_footer.html",
 		"/home/mingot/Envs/memolingus/lib/python2.6/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/base.html",
@@ -152,6 +216,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"false",
+			"ctrl+shift+/",
+			"user.",
+			"list_detail",
 			"site",
 			"package control"
 		],
@@ -171,7 +239,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -179,15 +247,15 @@
 					"file": "memolingus/urls.py",
 					"settings":
 					{
-						"buffer_size": 929,
+						"buffer_size": 685,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								649,
-								649
+								557,
+								557
 							]
 						],
 						"settings":
@@ -205,42 +273,15 @@
 					"file": "parsapp/views.py",
 					"settings":
 					{
-						"buffer_size": 3683,
+						"buffer_size": 2098,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1258,
-								1258
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 340.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "parsapp/dump.py",
-					"settings":
-					{
-						"buffer_size": 916,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								524,
-								524
+								628,
+								628
 							]
 						],
 						"settings":
@@ -255,25 +296,154 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "parsapp/models.py",
+					"buffer": 2,
 					"settings":
 					{
-						"buffer_size": 955,
+						"buffer_size": 534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								770,
-								770
+								534,
+								534
+							]
+						],
+						"settings":
+						{
+							"line_padding_bottom": 2,
+							"line_padding_top": 2,
+							"result_regions":
+							{
+								"337,385":
+								{
+									"filepath": "/home/mingot/Projectes/django/memolingus/parsapp/templates/words_form.html",
+									"linenum": 16,
+									"match": null
+								},
+								"386,450":
+								{
+									"filepath": "/home/mingot/Projectes/django/memolingus/parsapp/templates/words_form.html",
+									"linenum": 21,
+									"match": null
+								},
+								"451,533":
+								{
+									"filepath": "/home/mingot/Projectes/django/memolingus/parsapp/dump.py",
+									"linenum": 13,
+									"match": null
+								}
+							},
+							"selected_result": -2,
+							"syntax": "Packages/SublimeTODO/todo_results.hidden-tmLanguage",
+							"todo_results": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "parsapp/forms.py",
+					"settings":
+					{
+						"buffer_size": 667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								667,
+								667
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "parsapp/templates/words_form.html",
+					"settings":
+					{
+						"buffer_size": 995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								739
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "parsapp/dump.py",
+					"settings":
+					{
+						"buffer_size": 1366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								260
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "parsapp/dictionary.py",
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

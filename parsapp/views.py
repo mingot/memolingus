@@ -13,11 +13,6 @@ import re
 import dump # load english_dict with top 1000 UK words
 
 
-def strip_non_ascii(string):
-    ''' Returns the string without non ASCII characters'''
-    stripped = (c for c in string if 0 < ord(c) < 127)
-    return ''.join(stripped)
-
 @login_required
 def parse_input(request):
 	if request.method=='POST':
@@ -29,7 +24,6 @@ def parse_input(request):
 				try:
 					w = Word.objects.get(name=word)
 				except Word.DoesNotExist:
-					# TODO: What if word does not exists in dictionary?
 					w = Word.objects.create(name=word, description=lookup(word))
 				request.user.wordcontext_set.create( word=w, status=0) #status temp
 			return	HttpResponseRedirect(reverse('words', kwargs={'status':0}))
