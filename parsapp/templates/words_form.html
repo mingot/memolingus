@@ -7,19 +7,19 @@
 
     <form action="" method="post"> {% csrf_token %}
     	{{ formset.management_form }}
-        <table>
-        	<!-- TODO: Words listing styling -->
-            {% for form in formset %}
-        		{{ form.as_p }}
-        		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
-        		<div id="{{ form.instance.word.name }}" class="collapse">
-        			<!-- TODO: Improve apparance of word definitions -->
-        			{{ form.instance.word.description|linebreaks }}
-                    <p></p>
-        		</div>
-        	{% endfor %}
-        </table>
-
+                {% for form in formset %}
+                     {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                    {% endfor %} 
+             
+            		{{ form.status.label }}:
+                    {{ form.status }}
+        
+            		<button type="button" class="btn btn-info btn-small" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
+                    <div id="{{ form.instance.word.name }}" class="collapse">
+            			<div class="well">{{ form.instance.word.description|linebreaks }}</div>
+            		</div>
+            	{% endfor %}
         <p><input type="submit" value="Submit"></p>
     </form>
 {% endblock %}
