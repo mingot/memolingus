@@ -1,11 +1,15 @@
 from parsapp.models import Word
+from django.conf import settings
 import os, re 
 # module_dir = os.path.dirname(__file__)
 # path_gutenberg = os.path.join(module_dir, "static/1k_gutenberg.csv")
 # path_coca = os.path.join(os.getcwd(), "parsapp/static/5k_coca.csv")
 
-f_gutenberg = open("/home/mingot/Projectes/django/memolingus/parsapp/static/1k_gutenberg.csv", "r") 
-f_coca = open("/home/mingot/Projectes/django/memolingus/parsapp/static/5k_coca.csv", "r")
+path_gutenberg = os.path.join(settings.STATIC_ROOT, "1k_gutenberg.csv")
+path_coca = os.path.join(settings.STATIC_ROOT, "5k_coca.csv")
+
+f_gutenberg = open(path_gutenberg, "r") 
+f_coca = open(path_coca, "r")
 
 
 # Load 1k freq from gutenberg

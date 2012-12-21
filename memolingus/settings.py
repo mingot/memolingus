@@ -23,7 +23,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'mingot',
         'PASSWORD': '230489',
-    }
+    },
 }
 
 # 230489 time zone for this installation. Choices can be found here:
@@ -122,7 +122,8 @@ WSGI_APPLICATION = "memolingus.wsgi.application"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
-    '/home/mingot/Projectes/django/memolingus/parsapp/templates',
+    os.path.join(PACKAGE_ROOT, "parsapp/templates"),
+    # '/home/mingot/Projectes/django/memolingus/parsapp/templates',
 ]
 
 INSTALLED_APPS = [
@@ -142,6 +143,7 @@ INSTALLED_APPS = [
     # external
     "account",
     "metron",
+
     
     # project
     "parsapp",
@@ -194,4 +196,4 @@ ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['deploy'] =  dj_database_url.config()
