@@ -25,7 +25,8 @@ def parse_input(request):
 					w = Word.objects.get(name=word)
 				except Word.DoesNotExist:
 					w = Word.objects.create(name=word, description=lookup(word))
-				request.user.wordcontext_set.create( word=w, status=0) #status temp
+				request.user.wordcontext_set.create( word=w, status=0, 
+					context=dump.get_context(word, form.cleaned_data['parse_text'])) #status temp
 			return	HttpResponseRedirect(reverse('words', kwargs={'status':0}))
 	else:
 		form = ParseForm(initial={'parse_text':'The hacker made the startup! Parse it!'})

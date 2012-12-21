@@ -28,7 +28,7 @@ def strip_non_ascii(string):
 def select_words(msg, request):
 	
 	msg = strip_non_ascii(msg) #remove not ascii characters
-	msg = re.sub(r'[.,?!%\n()]','',msg)  # remove punctuation signs and numbers
+	msg = re.sub(r'[.,?!:;%\n()]','',msg)  # remove punctuation signs and numbers
 	msg = re.sub(r'\'*','',msg)
 	msg = re.split(' |\n',msg) # split text by whitespace and newlines
 	msg2=list(msg)
@@ -51,4 +51,11 @@ def select_words(msg, request):
 				msg_good.append(word)
 	return(msg_good)
 
-# The hacker made the startup! Parse it! Does Google really know how to fight against Samsung? It's just for 20$??
+def get_context(word, msg):
+	msg= msg.rsplit(' ')
+	for i,w in enumerate(msg):
+		if re.match(word, w, re.I):
+			ini = (i-5) if (i-5)>=0 else 0
+			end = (i+5) if (i+5)<len(msg) else len(msg) 
+			return(" ".join(msg[ini:end]))
+			

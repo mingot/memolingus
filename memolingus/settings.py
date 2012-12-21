@@ -17,10 +17,16 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": "dev.db",
+    },
+    "deploy": {
+        'NAME': 'memolingus_db',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'USER': 'mingot',
+        'PASSWORD': '230489',
     }
 }
 
-# Local time zone for this installation. Choices can be found here:
+# 230489 time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # On Unix systems, a value of None will cause Django to use the same
@@ -185,3 +191,7 @@ ACCOUNT_EMAIL_AUTHENTICATION = False
 ACCOUNT_LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()

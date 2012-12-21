@@ -11,16 +11,19 @@
                      {% for hidden in form.hidden_fields %}
                         {{ hidden }}
                     {% endfor %} 
-             
-            		<strong>{{ form.status.label }}</strong>:
-                    {{ form.status }}
-        
-            		<button type="button" class="btn btn-info btn-small" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button>
+            		<div class="row">      
+                        <div class="span1"><strong>{{ form.status.label }}</strong>:</div>
+                        <div class="span2">{{ form.status }}</div>
+                        <div class="span3 offset1">
+                        <button type="button" class="btn btn-info btn-small" data-toggle="collapse" data-target="#{{ form.instance.word.name }}">Definition</button></div>
+                    </div>
                     <div id="{{ form.instance.word.name }}" class="collapse">
             			<div class="well">{{ form.instance.word.description|linebreaks }}</div>
+                        <div class="well">{{ form.instance.context }}</div>
             		</div>
             	{% endfor %}
         <p><input type="submit" value="Submit"></p>
     </form>
 {% endblock %}
+
 
