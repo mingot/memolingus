@@ -14,11 +14,11 @@ ADMINS = [
 MANAGERS = ADMINS
 
 DATABASES = {
+    # "default": {
+    #     "ENGINE": "django.db.backends.sqlite3",
+    #     "NAME": "dev.db",
+    # },
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "dev.db",
-    },
-    "deploy": {
         'NAME': 'memolingus_db',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'mingot',
@@ -194,6 +194,6 @@ ACCOUNT_LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
 
-# Parse database configuration from $DATABASE_URL
+# # Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES['deploy'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config()

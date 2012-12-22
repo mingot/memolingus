@@ -281,6 +281,10 @@
 		"selected_items":
 		[
 			[
+				"memo",
+				"/home/mingot/Projectes/django/memolingus/memolingus.sublime-project"
+			],
+			[
 				"heroku",
 				"/home/mingot/Projectes/django/blackboard/blackboard.sublime-project"
 			],

@@ -51,7 +51,7 @@
 			"file": "memolingus/settings.py",
 			"settings":
 			{
-				"buffer_size": 6053,
+				"buffer_size": 6066,
 				"line_ending": "Unix"
 			}
 		},
@@ -254,7 +254,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -324,8 +324,8 @@
 						"selection":
 						[
 							[
-								584,
-								584
+								438,
+								438
 							]
 						],
 						"settings":
@@ -372,15 +372,15 @@
 					"file": "memolingus/settings.py",
 					"settings":
 					{
-						"buffer_size": 6053,
+						"buffer_size": 6066,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1310,
-								1310
+								253,
+								253
 							]
 						],
 						"settings":
@@ -390,7 +390,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 663.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -493,6 +493,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"her",
+				"/home/mingot/Projectes/django/memolingus/parsapp/heroku_app.sublime-project"
+			],
 			[
 				"heroku",
 				"/home/mingot/Projectes/django/blackboard/blackboard.sublime-project"
